@@ -19,11 +19,11 @@ int GetDaysOfYear(int a, int b, int c)
 	}
 	else
 	{
-		int LeapYear[] = { 0,31,28,31,30,31,30,31,31,30,31,30,31 };
+		int AverageYear[] = { 0,31,28,31,30,31,30,31,31,30,31,30,31 };
 		int count = 0;
 		for (int i = 1; i <= b - 1; i++)
 		{
-			count += LeapYear[i];
+			count += AverageYear[i];
 
 		}
 		count += c;
@@ -35,6 +35,6 @@ int main()
 	int x, y, z = 0;
 	scanf("%d%*c%d%*c%d%", &x, &y, &z);
 	//printf("%d %d %d", x, y, z);
-	printf("该日期是今年的第%d天\n", GetDaysOfYear(x, y, z));
+	printf("赂脙脠脮脝脷脢脟陆帽脛锚碌脛碌脷%d脤矛\n", GetDaysOfYear(x, y, z));
 	return 0;
 }
