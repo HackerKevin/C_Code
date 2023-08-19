@@ -1,21 +1,21 @@
 #define _CRT_SECURE_NO_WARNINGS	1
-//Ğ´Ò»¸ö¶ş·Ö²éÕÒº¯Êı
-//¹¦ÄÜ£ºÔÚÒ»¸öÉıĞòÊı×éÖĞ²éÕÒÖ¸¶¨µÄÊıÖµ£¬ÕÒµ½ÁË¾Í·µ»ØÏÂ±ê£¬ÕÒ²»µ½¾Í·µ»Ø - 1
+//å†™ä¸€ä¸ªäºŒåˆ†æŸ¥æ‰¾å‡½æ•°
+//åŠŸèƒ½ï¼šåœ¨ä¸€ä¸ªå‡åºæ•°ç»„ä¸­æŸ¥æ‰¾æŒ‡å®šçš„æ•°å€¼ï¼Œæ‰¾åˆ°äº†å°±è¿”å›ä¸‹æ ‡ï¼Œæ‰¾ä¸åˆ°å°±è¿”å› - 1
 #include <stdio.h>
 int bin_search(int arr[], int left, int right, int key)
 {
+	int mid = 0;
 	while (left <= right)
 	{
-		if (arr[left] == key || arr[right] == key)
-		{
-			if (arr[left] == key)
-				return left;
-			else if (arr[right] == key)
-				return right;
-		}
-		left++;
-		right--;
+		mid = left + (right - left) / 2;
+		if (key == arr[mid])
+			return mid;
+		else if (key > arr[mid])
+			left = mid + 1;
+		else
+			right = mid - 1;
 	}
+	return -1;
 }
 int main()
 {
@@ -23,15 +23,15 @@ int main()
 	int num[] = { 0,1,2,3,4,5,6,7,8,9 };
 	int right = sizeof(num) / sizeof(num[0]) - 1;
 	int left = 0;
-	while (printf("ÇëÊäÈëÄãÒª²éÕÒµÄÖµ£º>"), scanf("%d", &n) != EOF)
+	while (printf("è¯·è¾“å…¥ä½ è¦æŸ¥æ‰¾çš„å€¼ï¼š>"), scanf("%d", &n) != EOF)
 	{
 		if (bin_search(num, left, right, n) == -1)
 		{
-			printf("±§Ç¸£¬Ã»ÓĞÕÒµ½ÄãÏëÒªµÄÖµ\n");
+			printf("æŠ±æ­‰ï¼Œæ²¡æœ‰æ‰¾åˆ°ä½ æƒ³è¦çš„å€¼\n");
 		}
 		else
 		{
-			printf("ÄãÏëÒªµÄÖµÔÚÊıÖµÖĞµÄµÚ%dÎ»\n", bin_search(num, left, right, n) + 1);
+			printf("ä½ æƒ³è¦çš„å€¼åœ¨æ•°å€¼ä¸­çš„ç¬¬%dä½\n", bin_search(num, left, right, n) + 1);
 		}
 	}
 	return 0;
