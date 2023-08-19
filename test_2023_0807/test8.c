@@ -1,24 +1,24 @@
 #define _CRT_SECURE_NO_WARNINGS	1
-//ºÈÆûË®£¬1Æ¿ÆûË®1Ôª£¬2¸ö¿ÕÆ¿¿ÉÒÔ»»Ò»Æ¿ÆûË®£¬¸ø20Ôª£¬¿ÉÒÔºÈ¶àÉÙÆûË®£¨±à³ÌÊµÏÖ£©¡£
+//å–æ±½æ°´ï¼Œ1ç“¶æ±½æ°´1å…ƒï¼Œ2ä¸ªç©ºç“¶å¯ä»¥æ¢ä¸€ç“¶æ±½æ°´ï¼Œç»™20å…ƒï¼Œå¯ä»¥å–å¤šå°‘æ±½æ°´ï¼ˆç¼–ç¨‹å®ç°ï¼‰ã€‚
 #include <stdio.h>
 int Beverage(int money)
 {
-	static int beverage = 0;
-	int lid = 0;
-	while (money)
+	int total = money;
+	int empty = money;
+	while (empty > 1)
 	{
-		lid++;
-		beverage++;
-		money--;
+		total += empty / 2;
+		empty = empty / 2 + empty % 2;
 	}
-	lid /= 2;
-	if (lid != 0)
-		Beverage(lid);
-	return beverage;
+	return total;
 }
+
 int main()
 {
-	int n = 20;
-	printf("¿ÉÒÔºÈ%dÆ¿ÆûË®", Beverage(n));
+	int n = 0;
+	while (scanf("%d", &n) != EOF)
+	{
+		printf("å¯ä»¥å–%dç“¶æ±½æ°´\n", Beverage(n));
+	}
 	return 0;
 }
