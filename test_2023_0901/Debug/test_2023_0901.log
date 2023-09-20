@@ -1,0 +1,4 @@
+﻿  test_10.c
+D:\Code\test_2023_0901\test_10.c(12,14): warning C4090: “return”: 不同的“const”限定符
+D:\Code\test_2023_0901\test_10.c(23,13): warning C4090: “return”: 不同的“const”限定符
+  test_2023_0901.vcxproj -> D:\Code\test_2023_0901\Debug\test_2023_0901.exe
