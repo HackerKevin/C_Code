@@ -1,0 +1,4 @@
+﻿  SList.c
+D:\Code\test_2023_0918\SList.c(21,3): warning C4033: “BuyLTNode”必须返回值
+D:\Code\test_2023_0918\SList.c(27): warning C4715: “BuyLTNode”: 不是所有的控件路径都返回值
+  test_2023_0918.vcxproj -> D:\Code\test_2023_0918\Debug\test_2023_0918.exe
