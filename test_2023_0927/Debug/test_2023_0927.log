@@ -1,0 +1,4 @@
+﻿  test_13.c
+D:\Code\test_2023_0927\test_13.c(11,30): warning C4013: “malloc”未定义；假设外部返回 int
+D:\Code\test_2023_0927\test_13.c(34,26): warning C4013: “realloc”未定义；假设外部返回 int
+  test_2023_0927.vcxproj -> D:\Code\test_2023_0927\Debug\test_2023_0927.exe
