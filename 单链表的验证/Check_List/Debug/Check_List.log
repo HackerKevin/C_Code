@@ -1,0 +1,6 @@
+﻿  TestLinkList.cpp
+D:\大学\大二\数据结构\实验一\单链表的验证\Check_List\TestLinkList.cpp(52,20): warning C4018: “<”: 有符号/无符号不匹配
+D:\大学\大二\数据结构\实验一\单链表的验证\Check_List\TestLinkList.cpp(64,20): warning C4018: “<”: 有符号/无符号不匹配
+D:\大学\大二\数据结构\实验一\单链表的验证\Check_List\TestLinkList.cpp(84,20): warning C4018: “<”: 有符号/无符号不匹配
+D:\大学\大二\数据结构\实验一\单链表的验证\Check_List\TestLinkList.cpp(86,20): warning C4018: “<”: 有符号/无符号不匹配
+  Check_List.vcxproj -> D:\大学\大二\数据结构\实验一\单链表的验证\Check_List\Debug\Check_List.exe
