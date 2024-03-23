@@ -1,0 +1,5 @@
+﻿  test_1.cpp
+D:\Code\test_2024_0322\test_1.cpp(54,12): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+D:\Code\test_2024_0322\test_1.cpp(82,4): warning C4834: 放弃具有 "nodiscard" 属性的函数的返回值
+D:\Code\test_2024_0322\test_1.cpp(90,5): warning C4834: 放弃具有 "nodiscard" 属性的函数的返回值
+  test_2024_0322.vcxproj -> D:\Code\test_2024_0322\Debug\test_2024_0322.exe
